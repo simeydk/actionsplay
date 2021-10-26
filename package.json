@@ -1,0 +1,20 @@
+{
+  "name": "actionsplay",
+  "version": "1.0.0",
+  "description": "dummy repo to test github actions",
+  "main": "index.js",
+  "scripts": {
+    "stamp": "date >> date.txt"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/simeydk/actionsplay.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/simeydk/actionsplay/issues"
+  },
+  "homepage": "https://github.com/simeydk/actionsplay#readme"
+}
