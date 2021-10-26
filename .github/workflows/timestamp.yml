@@ -10,7 +10,7 @@ jobs: # A workflow run is made up of one or more jobs that can run sequentially 
   timestamp:
     env:
       GITHUB_TOKEN: ${{secrets.GH_TOKEN}}
-      USERNAME: simeycodes
+      USERNAME: ${{secrets.GH_TOKEN}}
     runs-on: ubuntu-latest     # The type of runner that the job will run on
 
     # Steps represent a sequence of tasks that will be executed as part of the job
