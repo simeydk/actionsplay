@@ -10,7 +10,8 @@ jobs: # A workflow run is made up of one or more jobs that can run sequentially 
   timestamp:
     env:
       GITHUB_TOKEN: ${{secrets.GH_TOKEN}}
-      USERNAME: ${{secrets.GH_TOKEN}}
+      USERNAME: "Linus Torvalds"
+      EMAIL: torvalds@linux-foundation.org
     runs-on: ubuntu-latest     # The type of runner that the job will run on
 
     # Steps represent a sequence of tasks that will be executed as part of the job
@@ -27,7 +28,7 @@ jobs: # A workflow run is made up of one or more jobs that can run sequentially 
           # git config user.email "13088589+simeydk@users.noreply.github.com"
         run: |-          
           git config user.name $USERNAME
-          git config user.email "92826264+simeycodes@users.noreply.github.com"
+          git config user.email $EMAIL
           git add -A
           git commit -m "Add a timestamp" || exit 0
           git push
